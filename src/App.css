@@ -20,3 +20,57 @@ body{
   width: 100%;
   background-color: var(--light-bg);
 }
+:root{
+  --primary-bg: #26577C;
+  --secondary-bg: #E55604;
+  --third-bg: #B4B4B3;
+  --fourth-bg: #EBE4D1;
+  --fw-800: 800;
+  --fw-600: 600;
+  --fw-400: 400;
+  --fw-300: 300;
+  --light-font: #ffff;
+  --dark-font: #000;
+}
+/********************* REUSED LINKS *************************/
+body{
+  width: 100%;
+}
+a{
+  color: var(--light-font);
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--light-font);
+  text-underline-offset: .2rem;
+}
+header{
+  width: 100%;
+}
+.nav1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2% 10px;
+  background-color: var(--primary-bg);
+}
+.nav1 > .contact-links,
+.nav1 > .follow-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.follow-links > ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+/*************************** MAIN NAV ******************************/
+.logo{
+  width: 150px;
+  height: 150px;
+}
