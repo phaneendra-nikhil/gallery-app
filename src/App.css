@@ -14,16 +14,20 @@
   --primary-bg: #fff;
   --font-color:#000;
   --secondory-bg: #cccc;
-  --forground-color: #003cff;
+  --forground-color: #2bbff5;
   --toggle-bg: #f0eb9d;
   --toggle-fg: #ffd000;
 }
 body{
   width: 100%;
+  height: 100vh;
   background-color: var(--primary-bg);
 }
 a{
   color: var(--font-color);
+}
+button{
+  cursor: pointer;
 }
 
 /********************/
@@ -32,7 +36,25 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 5% 30px;
+  padding: 10px 5% 10px;
+  border-bottom: 2px solid var(--font-color);
+  
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  h1 img{
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 a{
+    font-size: 2.5rem;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 1px #000;
+  }
 
   ul{
     display: flex;
@@ -41,7 +63,52 @@ nav{
     gap: 20px;
 
     li a{
-      color: var(--font-color);
+      padding: 5px 10px;
+      font-weight: 600;
+      font-size: 1rem;
     }
+    li a:hover{
+      text-decoration: underline;
+      text-decoration-color: var(--font-color);
+      text-underline-offset: .2rem;
+    }
+  }
+}
+/*************************************************/
+.banner-container{
+  width: 100%;
+
+  img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+.banner-content{
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  h1{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: 2px var(--font-color);
+  }
+  button{
+    background: var(--primary-bg);
+    border: 2px solid var(--font-color);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+  }
+  button:where(:hover, :focus-visible){
+    background-color: var(--forground-color);
+    border-radius: 8px;
   }
 }
