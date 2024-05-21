@@ -10,3 +10,13 @@
 ::-webkit-scrollbar{
   width: 0;
 }
+:root{
+  --light-bg: #fff;
+  --dark-bg: #000;
+  --light-grey-bg: #ccc;
+  --light-dark-bg:#252525;
+}
+body{
+  width: 100%;
+  background-color: var(--light-bg);
+}
