@@ -84,7 +84,6 @@ nav {
 }
 .banner-text {
     width: 1000px;
-
     h1 {
         font-size: 5.4rem;
         -webkit-text-stroke: 2px;
@@ -108,28 +107,103 @@ nav {
 }
 .box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 12px;
     padding: 12px;
-    width: 1200px;
-    height: 120px;
+    width: 1250px;
+    height: 150px;
     border: 2px solid var(--font-color);
     position: absolute;
-    top: 87%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, 0%);
     background-color: #fff;
     border-radius: 12px;
 }
-/* .location-text .title{
-  font-size: .9rem;
-  color: #ccc;
-  text-align: center;
-} */
 
 /**********************************************************/
 .destination-content {
+    text-align: center;
+    width: 100%;
+    height: max-content;
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.location-text .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.from-input,
+.to-input {
+    padding: 0.9rem 0.7rem;
+    border: 2px solid var(--font-color);
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: 8px;
+    width: 250px;
+}
+.from-input::placeholder,
+.to-input::placeholder {
+    color: var(--font-color);
+    font-weight: 800;
+}
+.input .exchange {
+    font-size: 1rem;
+    font-weight: 800;
+}
+.time-text .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.depart,
+.return {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    input {
+        padding: 0.9rem 0.7rem;
+        border: 2px solid var(--font-color);
+        border-radius: 8px;
+        font-weight: 800;
+    }
+    label {
+        font-weight: 500;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+}
+.pass-text select {
+    padding: 0.9rem 0.7rem;
+    border: 2px solid var(--font-color);
+    outline: none;
+    font-weight: 800;
+    border-radius: 8px;
+}
+.search-btn {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    border: 2px solid var(--font-color);
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: var(--forground-color);
+    transition: all 0.25s ease-in-out;
+}
+.search-btn:where(:hover, :focus-visible) {
+    background-color: #12779b;
+    color: #fff;
+
     text-align: center;
     width: 100%;
     height: max-content;
