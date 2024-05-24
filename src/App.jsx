@@ -1,6 +1,7 @@
-import Homepage from "./pages/Homepage";
 import "./App.css";
-import Destination from "./pages/Destination";
+import Footer from "./components/Footer";
+import Destination from "./pages/Bestdeals";
+import Homepage from "./pages/Homepage";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <div className="App">
                 <Homepage />
                 <Destination />
+                <Footer />
             </div>
         </>
     );
