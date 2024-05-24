@@ -10,6 +10,7 @@ const Destination = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        dots: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
