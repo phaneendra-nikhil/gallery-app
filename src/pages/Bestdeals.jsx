@@ -4,7 +4,7 @@ const Destination = () => {
     return (
         <>
             <div className="destination-content">
-                <h1>Our Best Deals</h1>
+                <h1>Our Best Deals...</h1>
                 <div className="destcards">
                     <div className="card">
                         <div className="card-image">
@@ -21,7 +21,12 @@ const Destination = () => {
                         <hr className="card-divider" />
                         <div className="card-footer">
                             <div className="card-price">
-                                <span>$</span> 123.45
+                                <span
+                                    style={{ textDecoration: "line-through" }}
+                                >
+                                    $123.45
+                                </span>{" "}
+                                <span style={{ color: "black" }}>$100.00</span>
                             </div>
                             <button className="card-btn">
                                 <svg
