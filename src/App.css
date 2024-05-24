@@ -339,3 +339,32 @@ footer {
     border-radius: 12px;
     padding: 40px 5% 40px;
 }
+
+.destcards .card {
+    margin: 0 10px;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 20px;
+    color: black;
+}
+
+.destination-content {
+    position: relative;
+    padding: 0 20px;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
