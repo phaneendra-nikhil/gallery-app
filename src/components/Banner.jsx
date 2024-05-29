@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import banner from "../assets/banner.jpg";
 import Journeybox from "./Journeybox";
 
 const Banner = () => {
@@ -20,7 +19,12 @@ const Banner = () => {
                         </p>
                     </article>
                     <article className="banner-img">
-                        <img src={banner} alt="" className="img" />
+                        <img
+                            src="https://st2.depositphotos.com/1500858/6435/i/950/depositphotos_64358265-stock-photo-travel-the-world-monument-concept.jpg"
+                            alt=""
+                            className="img"
+                            width="150%"
+                        />
                     </article>
                 </section>
                 <Journeybox />

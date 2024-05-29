@@ -34,7 +34,8 @@ const Journeybox = () => {
                     </div>
                     <div className="pass-text">
                         <select>
-                            <option value="First Class">First Class</option>
+                            <option value="all">Select All</option>
+                            <option value="FirstClass">First Class</option>
                             <option value="Business">Business</option>
                             <option value="Economy">Economy</option>
                         </select>

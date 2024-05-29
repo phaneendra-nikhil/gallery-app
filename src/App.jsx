@@ -1,6 +1,6 @@
 import "./App.css";
 import Footer from "./components/Footer";
-import Destination from "./pages/Bestdeals";
+import Bestdeals from "./pages/Bestdeals";
 import Homepage from "./pages/Homepage";
 import Topplaces from "./pages/Topplaces";
 
@@ -9,7 +9,7 @@ function App() {
         <>
             <div className="App">
                 <Homepage />
-                <Destination />
+                <Bestdeals />
                 <Topplaces />
                 <Footer />
             </div>

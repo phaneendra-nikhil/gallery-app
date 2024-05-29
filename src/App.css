@@ -426,3 +426,75 @@ footer {
 .top-places {
     padding: 20px;
 }
+
+.suggestions-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.suggestions-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.suggestions-input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.suggestions-from-input,
+.suggestions-to-input,
+.suggestions-depart input,
+.suggestions-return input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.suggestions-depart input,
+.suggestions-return input {
+    width: 100%;
+}
+
+.suggestions-list {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestions-search-btn {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.suggestions-search-btn:hover {
+    background-color: #0056b3;
+}
