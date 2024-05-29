@@ -117,12 +117,14 @@ const SampleNextArrow = (props) => {
             className={className}
             style={{
                 ...style,
-                borderRadius: "0%",
+                borderRadius: "50%",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 right: "0px",
                 backgroundColor: "#252525",
+                width: "40px", // Adjust width and height as needed
+                height: "40px",
             }}
             onClick={onClick}
         />
@@ -136,12 +138,14 @@ const SamplePrevArrow = (props) => {
             className={className}
             style={{
                 ...style,
-                borderRadius: "0%",
+                borderRadius: "50%",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 left: "0px",
                 backgroundColor: "#252525",
+                width: "40px", // Adjust width and height as needed
+                height: "40px",
             }}
             onClick={onClick}
         />

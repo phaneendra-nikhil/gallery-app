@@ -1,31 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 const Nav = () => {
+    const navigate = useNavigate();
     return (
         <div className="header">
             <header>
                 <nav>
                     <h1 className="logo-title">Travello</h1>
                     <ul className="nav-links">
-                        <li>
-                            <a href="#">Home</a>
+                        <li onClick={() => navigate("/")}>Home</li>
+                        <li onClick={() => navigate("/destinations")}>
+                            Destinations
                         </li>
-                        <li>
-                            <a href="#">Destinations</a>
-                        </li>
-                        <li>
-                            <a href="#">Planes</a>
-                        </li>
-                        <li>
-                            <a href="#">Travel guide</a>
-                        </li>
-                        <li>
-                            <a href="#">Best Deals</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
+                        <li onClick={() => navigate("/planes")}>Planes</li>
+                        <li onClick={() => navigate("/guide")}>Travel guide</li>
+                        <li onClick={() => navigate("/about")}>About us</li>
+                        <li onClick={() => navigate("/login")}>Login</li>
                     </ul>
                 </nav>
             </header>
