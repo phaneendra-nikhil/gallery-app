@@ -8,9 +8,10 @@ const Nav = () => {
         <div className="header">
             <header>
                 <nav>
-                    <h1 className="logo-title">Travello</h1>
+                    <h1 className="logo-title" onClick={() => navigate("/")}>
+                        Travello
+                    </h1>
                     <ul className="nav-links">
-                        <li onClick={() => navigate("/")}>Home</li>
                         <li onClick={() => navigate("/destinations")}>
                             Destinations
                         </li>

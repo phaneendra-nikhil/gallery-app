@@ -50,6 +50,7 @@ nav {
 
     h1 {
         font-size: 2.5rem;
+        cursor: pointer;
     }
 
     ul {
@@ -498,4 +499,85 @@ footer {
 
 .suggestions-search-btn:hover {
     background-color: #0056b3;
+}
+
+.login-container {
+    --bg-color: #ede9f8;
+    --color-primary: #2d3436;
+    --color-secondary: #252c6a;
+    --border-radius: 4px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form--hidden {
+    display: none;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    span {
+        color: rgb(9, 176, 241);
+    }
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    outline: none;
+    background: #eee;
+    transition: background 0.2s border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #fff;
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+    -webkit-user-select: none;
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.padding {
+    padding-bottom: 10px;
 }
