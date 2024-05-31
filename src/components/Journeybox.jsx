@@ -1,4 +1,6 @@
 import React from "react";
+import DropdownList from "react-widgets/DropdownList";
+import "react-widgets/styles.css";
 
 const Journeybox = () => {
     return (
@@ -7,17 +9,39 @@ const Journeybox = () => {
                 <div className="box">
                     <div className="location-text">
                         <div className="input">
-                            <input
-                                type="text"
-                                className="from-input"
-                                placeholder="From"
-                            />
+                            <div className="from">
+                                <label htmlFor="from">From</label>
+                                <DropdownList
+                                    defaultValue="Select"
+                                    data={[
+                                        "Select",
+                                        "Hyderabad(HYD)",
+                                        "Banglaore(BLR)",
+                                        "Chennai(CHN)",
+                                        "Mumbai(BOM)",
+                                        "Delhi(DEL)",
+                                    ]}
+                                    style={{ width: "200px" }}
+                                />
+                            </div>
                             <i class="uil uil-exchange-alt exchange"></i>
-                            <input
-                                type="text"
-                                className="to-input"
-                                placeholder="To"
-                            />
+                            <div className="to">
+                                <label htmlFor="to">To</label>
+                                <DropdownList
+                                    defaultValue="Select"
+                                    data={[
+                                        "Select",
+                                        "Hyderabad(HYD)",
+                                        "Banglaore(BLR)",
+                                        "Chennai(CHN)",
+                                        "Mumbai(BOM)",
+                                        "Delhi(DEL)",
+                                    ]}
+                                    style={{
+                                        width: "200px",
+                                    }}
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="time-text">
@@ -33,12 +57,18 @@ const Journeybox = () => {
                         </div>
                     </div>
                     <div className="pass-text">
-                        <select>
-                            <option value="all">Select All</option>
-                            <option value="FirstClass">First Class</option>
-                            <option value="Business">Business</option>
-                            <option value="Economy">Economy</option>
-                        </select>
+                        <DropdownList
+                            defaultValue="Select"
+                            data={[
+                                "Select",
+                                "First Class",
+                                "Business",
+                                "Economy",
+                            ]}
+                            style={{
+                                width: "150px",
+                            }}
+                        />
                     </div>
                     <button className="search-btn">Search</button>
                 </div>

@@ -8,8 +8,12 @@ const Login = () => {
         <>
             <Nav />
             <div className="login-container">
+                <img
+                    class="circular--square"
+                    src="https://w7.pngwing.com/pngs/386/732/png-transparent-airplane-aircraft-logo-airplane-blue-logo-airplane-thumbnail.png"
+                />
                 <div className="form" id="login">
-                    <h1 className="form__title">Welcome back</h1>
+                    <h1 className="form__title">Welcome back!</h1>
                     <div className="form__input-group">
                         <input
                             type="text"

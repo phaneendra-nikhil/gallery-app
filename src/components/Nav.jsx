@@ -9,13 +9,17 @@ const Nav = () => {
             <header>
                 <nav>
                     <h1 className="logo-title" onClick={() => navigate("/")}>
+                        {/* <img
+                            src="https://w7.pngwing.com/pngs/386/732/png-transparent-airplane-aircraft-logo-airplane-blue-logo-airplane-thumbnail.png"
+                            height={40}
+                            width={40}
+                        />{" "} */}
                         Travello
                     </h1>
                     <ul className="nav-links">
                         <li onClick={() => navigate("/destinations")}>
                             Destinations
                         </li>
-                        <li onClick={() => navigate("/planes")}>Planes</li>
                         <li onClick={() => navigate("/guide")}>Travel guide</li>
                         <li onClick={() => navigate("/about")}>About us</li>
                         <li onClick={() => navigate("/login")}>Login</li>
