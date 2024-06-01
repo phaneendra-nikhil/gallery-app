@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 
 const Nav = () => {
     const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <div className="header">
             <header>
                 <nav>
                     <h1 className="logo-title" onClick={() => navigate("/")}>
-                        {/* <img
-                            src="https://w7.pngwing.com/pngs/386/732/png-transparent-airplane-aircraft-logo-airplane-blue-logo-airplane-thumbnail.png"
-                            height={40}
-                            width={40}
-                        />{" "} */}
                         Travello
                     </h1>
-                    <ul className="nav-links">
+                    <div
+                        className={`menu-toggle ${menuOpen ? "open" : ""}`}
+                        onClick={toggleMenu}
+                    >
+                        <div className="hamburger"></div>
+                    </div>
+                    <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                         <li onClick={() => navigate("/destinations")}>
                             Destinations
                         </li>

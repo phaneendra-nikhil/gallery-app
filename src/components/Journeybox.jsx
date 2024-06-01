@@ -17,9 +17,14 @@ const Journeybox = () => {
                                         "Select",
                                         "Hyderabad(HYD)",
                                         "Banglaore(BLR)",
-                                        "Chennai(CHN)",
                                         "Mumbai(BOM)",
                                         "Delhi(DEL)",
+                                        "Pune(PNQ)",
+                                        "Chennai(MAA)",
+                                        "Ahmedabad(AMD)",
+                                        "Kolkata(CCU)",
+                                        "Jaipur(JAI)",
+                                        "Lucknow(LKO)",
                                     ]}
                                     style={{ width: "200px" }}
                                 />
@@ -33,9 +38,14 @@ const Journeybox = () => {
                                         "Select",
                                         "Hyderabad(HYD)",
                                         "Banglaore(BLR)",
-                                        "Chennai(CHN)",
                                         "Mumbai(BOM)",
                                         "Delhi(DEL)",
+                                        "Pune(PNQ)",
+                                        "Chennai(MAA)",
+                                        "Ahmedabad(AMD)",
+                                        "Kolkata(CCU)",
+                                        "Jaipur(JAI)",
+                                        "Lucknow(LKO)",
                                     ]}
                                     style={{
                                         width: "200px",

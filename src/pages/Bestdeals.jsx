@@ -33,8 +33,17 @@ const Bestdeals = () => {
 
     return (
         <>
+            <h1
+                style={{
+                    fontSize: "2rem",
+                    marginTop: "3rem",
+                    marginBottom: "2rem",
+                    textAlign: "center",
+                }}
+            >
+                Our Best Deals...
+            </h1>
             <div className="destination-content">
-                <h1>Our Best Deals...</h1>
                 <Slider {...settings} className="destcards">
                     <div className="card">
                         <div className="card-image">

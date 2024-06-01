@@ -20,15 +20,15 @@ const Banner = () => {
                     </article>
                     <article className="banner-img">
                         <img
-                            src="https://st2.depositphotos.com/1500858/6435/i/950/depositphotos_64358265-stock-photo-travel-the-world-monument-concept.jpg"
+                            src="https://img.freepik.com/premium-vector/travel-world-road-trip-tourism-landmarks-globe-concept-website-template-illustration-modern-flat-design_207954-6.jpg"
                             alt=""
                             className="img"
-                            width="150%"
+                            style={{ borderRadius: "5%" }}
                         />
                     </article>
                 </section>
-                <Journeybox />
             </div>
+            <Journeybox />
         </>
     );
 };

@@ -31,8 +31,16 @@ const Topplaces = () => {
 
     return (
         <>
+            <h1
+                style={{
+                    textAlign: "center",
+                    fontSize: "2rem",
+                    marginTop: "3rem",
+                }}
+            >
+                Top Places
+            </h1>
             <div className="top-places">
-                <h1>Top Places</h1>
                 <Slider {...settings} className="tp-cards">
                     <div class="tpcard">
                         <div className="tpcard-img"></div>
