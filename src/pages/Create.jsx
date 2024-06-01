@@ -30,7 +30,7 @@ const Create = () => {
                     </div>
                     <div className="form__input-group">
                         <input
-                            type="text"
+                            type="password"
                             className="form__input"
                             autofocus
                             placeholder="Passwrord"

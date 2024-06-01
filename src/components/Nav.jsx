@@ -14,7 +14,17 @@ const Nav = () => {
         <div className="header">
             <header>
                 <nav>
-                    <h1 className="logo-title" onClick={() => navigate("/")}>
+                    <h1 onClick={() => navigate("/")}>
+                        {" "}
+                        <img
+                            src="https://imgur.com/nwSEquf.png"
+                            height="40"
+                            width="40"
+                            style={{
+                                marginRight: "10px",
+                                marginBottom: "-5px",
+                            }}
+                        />
                         Travello
                     </h1>
                     <div

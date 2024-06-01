@@ -20,7 +20,7 @@ const Banner = () => {
                     </article>
                     <article className="banner-img">
                         <img
-                            src="https://img.freepik.com/premium-vector/travel-world-road-trip-tourism-landmarks-globe-concept-website-template-illustration-modern-flat-design_207954-6.jpg"
+                            src="https://cdn6.aptoide.com/imgs/9/9/6/996de528f72ad505efce1fbae0a9da10_fgraphic.jpg"
                             alt=""
                             className="img"
                             style={{ borderRadius: "5%" }}

@@ -10,7 +10,7 @@ const Login = () => {
             <div className="login-container">
                 <img
                     class="circular--square"
-                    src="https://w7.pngwing.com/pngs/386/732/png-transparent-airplane-aircraft-logo-airplane-blue-logo-airplane-thumbnail.png"
+                    src="https://imgur.com/nwSEquf.png"
                 />
                 <div className="form" id="login">
                     <h1 className="form__title">Welcome back!</h1>
